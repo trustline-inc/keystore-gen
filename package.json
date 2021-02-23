@@ -5,6 +5,8 @@
   "main": "./dist/index.js",
   "author": "Matthew Rosendin <matt@trustline.co>",
   "license": "MIT",
+  "bugs": "https://github.com/trustline-inc/keystore-gen/issues",
+  "homepage": "https://github.com/trustline-inc/keystore-gen",
   "bin": {
     "keystore-gen": "./bin/global.js"
   },
