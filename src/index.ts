@@ -20,7 +20,7 @@ import prompts from 'prompts';
       process.exit()
     }
   });
-  const privateKeyBuffer = toBuffer(response.privateKey);
+  const privateKeyBuffer = toBuffer(`0x${response.privateKey}`);
   const wallet = Wallet.fromPrivateKey(privateKeyBuffer);
   const keystoreFilename = wallet.getV3Filename();
   console.log(`Filename: ${keystoreFilename}`);
