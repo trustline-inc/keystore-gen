@@ -1,9 +1,10 @@
+import { writeFileSync } from 'fs';
 import Wallet from 'ethereumjs-wallet'
 import { toBuffer } from 'ethereumjs-util';
 import prompts from 'prompts';
 
 
-(async () => {
+const main = (async () => {
   const response = await prompts([
     {
       type: 'password',
@@ -23,7 +24,12 @@ import prompts from 'prompts';
   const privateKeyBuffer = toBuffer(`0x${response.privateKey}`);
   const wallet = Wallet.fromPrivateKey(privateKeyBuffer);
   const keystoreFilename = wallet.getV3Filename();
-  console.log(`Filename: ${keystoreFilename}`);
+  const filePath = `${__dirname}/${keystoreFilename};`
+  console.log(`Saving keystore file: ${filePath}`);
   const keystore = await wallet.toV3(response.encryptionPassword);
   console.log(keystore);
+  const output = JSON.stringify(keystore, null, 2);
+  writeFileSync(filePath, output);
 })()
+
+export default main
