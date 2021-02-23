@@ -22,9 +22,9 @@
   },
   "dependencies": {
     "@types/prompts": "^2.0.9",
-    "prompts": "^2.4.0",
     "ethereumjs-util": "^7.0.8",
-    "ethereumjs-wallet": "^1.0.1"
+    "ethereumjs-wallet": "^1.0.1",
+    "prompts": "^2.4.0"
   },
   "repository": {
     "type": "git",
