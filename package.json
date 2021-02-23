@@ -5,10 +5,12 @@
   "main": "./dist/index.js",
   "author": "Matthew Rosendin <matt@trustline.co>",
   "license": "MIT",
-  "bugs": "https://github.com/trustline-inc/keystore-gen/issues",
+  "bugs": {
+    "url": "https://github.com/trustline-inc/keystore-gen/issues"
+  },
   "homepage": "https://github.com/trustline-inc/keystore-gen",
   "bin": {
-    "keystore-gen": "./bin/global.js"
+    "keystore-gen": "bin/global.js"
   },
   "scripts": {
     "start": "ts-node src/index.ts"
@@ -23,5 +25,17 @@
     "prompts": "^2.4.0",
     "ethereumjs-util": "^7.0.8",
     "ethereumjs-wallet": "^1.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trustline-inc/keystore-gen.git"
+  },
+  "keywords": [
+    "ethereum",
+    "keystore",
+    "generate",
+    "encrypted",
+    "json",
+    "file"
+  ]
 }
