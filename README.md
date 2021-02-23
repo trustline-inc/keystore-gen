@@ -1,5 +1,7 @@
 # keystore-gen
 
+![npm](https://img.shields.io/npm/v/@trustline/keystore-gen)
+
 Utility to generate an encrypted Ethereum KeyStore file from a plaintext private key
 
 ## Usage
