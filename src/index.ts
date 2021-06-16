@@ -34,11 +34,13 @@ const main = (async () => {
 
 const generate = async ({
   encryptionPassword,
-  path,
+  filePath,
+  fileName,
   privateKey
 }: {
   encryptionPassword: string,
-  path: string,
+  filePath: string,
+  fileName: string,
   privateKey: string
 }) => {
   const privateKeyBuffer = toBuffer(`0x${privateKey}`);
@@ -46,7 +48,7 @@ const generate = async ({
   const keystoreFilename = wallet.getV3Filename();
   const keystore = await wallet.toV3(encryptionPassword);
   const output = JSON.stringify(keystore, null, 2);
-  writeFileSync(`${path}/${keystoreFilename}`, output);
+  writeFileSync(`${filePath}/${fileName || keystoreFilename}`, output);
 }
 
 export  { main as default, generate }
