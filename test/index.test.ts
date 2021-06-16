@@ -1,4 +1,17 @@
+import { readdirSync, unlinkSync } from 'fs';
+import * as path from 'path';
 import main from '../src/index';
+
+afterAll(async () => {
+  // Remove generated file
+  const dir = path.join(__dirname, '..', 'src');
+  console.log(dir);
+  readdirSync(dir)
+    .filter(file => {
+      return /UTC.+$/.test(file);
+    })
+    .map(file => unlinkSync(`${dir}/${file}`))
+});
 
 jest.mock('prompts', () => {
   return jest.fn().mockResolvedValue({
