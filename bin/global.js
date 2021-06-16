@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-import "../dist/index"
+require("../dist/index")
