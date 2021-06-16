@@ -24,7 +24,7 @@ const main = (async () => {
   const privateKeyBuffer = toBuffer(`0x${response.privateKey}`);
   const wallet = Wallet.fromPrivateKey(privateKeyBuffer);
   const keystoreFilename = wallet.getV3Filename();
-  const filePath = `${__dirname}/${keystoreFilename};`
+  const filePath = `${__dirname}/${keystoreFilename}`;
   console.log(`Saving keystore file: ${filePath}`);
   const keystore = await wallet.toV3(response.encryptionPassword);
   console.log(keystore);
