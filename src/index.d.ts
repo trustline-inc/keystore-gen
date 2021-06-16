@@ -1,0 +1,1 @@
+declare module '@trustline-inc/keystore-gen'
