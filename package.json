@@ -1,5 +1,5 @@
 {
-  "name": "@trustline/keystore-gen",
+  "name": "@trustline-inc/keystore-gen",
   "version": "1.0.4",
   "description": "Utility to generate an encrypted Ethereum KeyStore file",
   "main": "./dist/index.js",
@@ -11,6 +11,9 @@
   "homepage": "https://github.com/trustline-inc/keystore-gen",
   "bin": {
     "keystore-gen": "bin/global.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "type": "module",
   "scripts": {
