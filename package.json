@@ -9,6 +9,7 @@
     "url": "https://github.com/trustline-inc/keystore-gen/issues"
   },
   "type": "module",
+  "types": "./dist/index.d.ts",
   "homepage": "https://github.com/trustline-inc/keystore-gen",
   "bin": {
     "keystore-gen": "bin/global.js"
@@ -18,7 +19,7 @@
   },
   "scripts": {
     "start": "ts-node src/index.ts",
-    "build": "tsc",
+    "prepublish": "tsc",
     "test": "jest"
   },
   "preferGlobal": true,
