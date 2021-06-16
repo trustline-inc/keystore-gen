@@ -1,14 +1,14 @@
 {
   "name": "@trustline-inc/keystore-gen",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Utility to generate an encrypted Ethereum KeyStore file",
   "main": "./dist/index.js",
   "author": "Matthew Rosendin <matt@trustline.co>",
   "license": "MIT",
+  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/trustline-inc/keystore-gen/issues"
   },
-  "type": "module",
   "types": "./dist/index.d.ts",
   "homepage": "https://github.com/trustline-inc/keystore-gen",
   "bin": {
