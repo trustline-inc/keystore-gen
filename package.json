@@ -1,6 +1,6 @@
 {
   "name": "@trustline-inc/keystore-gen",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Utility to generate an encrypted Ethereum KeyStore file",
   "main": "./dist/index.js",
   "author": "Matthew Rosendin <matt@trustline.co>",
