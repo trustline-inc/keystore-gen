@@ -6,6 +6,23 @@ Utility to generate an encrypted Ethereum KeyStore file from a plaintext private
 
 ## Usage
 
+### Module
+
+```javascript
+import { generate } from "@trustline-inc/keystore-gen";
+
+// Saves encrypted keystore file to the path
+generate({
+  encryptionPassword: "secret",
+  path: ".",
+  privateKey: "secret"
+})
+```
+
+### Command Line
+
+> Warning: This is not working with GitHub packages
+
 Install the package globally:
 
 ```
