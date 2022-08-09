@@ -9,7 +9,7 @@ Utility to generate an encrypted Ethereum KeyStore file from a plaintext private
 ### Module
 
 ```javascript
-import { generate } from "@trustline-inc/keystore-gen";
+import { generate } from "@trustline/keystore-gen";
 
 // Saves encrypted keystore file to the path
 generate({
@@ -20,8 +20,6 @@ generate({
 ```
 
 ### Command Line
-
-> Warning: This is not working with GitHub packages
 
 Install the package globally:
 
