@@ -21,12 +21,10 @@ generate({
 
 ### Command Line
 
-> Warning: This is not working with GitHub packages
-
 Install the package globally:
 
 ```
-$ npm install -g @trustline/keystore-gen
+$ npm install -g @trustline-inc/keystore-gen
 ```
 
 Run the command. Enter the private key (without the `0x` prefix) and an encryption password:
