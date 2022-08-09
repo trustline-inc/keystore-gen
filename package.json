@@ -14,9 +14,6 @@
   "bin": {
     "keystore-gen": "bin/global.js"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "start": "ts-node src/index.ts",
     "prepublish": "tsc",
